@@ -4,6 +4,7 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import OfficeImage from '../images/OfficeImage.jpg'
+import { WhatsApp } from '@material-ui/icons';
 
 const useStyles = makeStyles((theme) => ({
   mainFeaturedPost: {
@@ -46,6 +47,9 @@ const BottomBanner = () => {
               Contacta con nosotros estamos para ayudarte
             </Typography>
             <Typography variant="h5" color="inherit" paragraph>
+              <WhatsApp />{' '}+54 351-772-7577/0306
+            </Typography>
+            <Typography variant="h5" color="inherit" paragraph>
               Consultas - Presupuestos - Disponibilidad
             </Typography>
             <Typography variant="h5" color="inherit" paragraph>
@@ -54,7 +58,7 @@ const BottomBanner = () => {
             <Typography variant="h5" color="inherit" paragraph>
               Sabados y Domingos de 9hs a 13hs
             </Typography>
-            <Typography variant="subtitle1" color="p" paragraph>
+            <Typography variant="subtitle1" color="inherit" paragraph>
               <em>Urgencias y trabajos fuera de los horarios se cobran extra</em>
             </Typography>
           </div>

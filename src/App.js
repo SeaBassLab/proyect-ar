@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 
 const App = () => {
   return (
-    <div>
+    <div style={{ boxSizing: 'border-box' }}>
       <MainHeader />
       <ArquitectureGardening />
       <Electrician />
