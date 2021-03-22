@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.js": "/jpsp/static/js/main.ad81e1f8.chunk.js",
+    "main.js.map": "/jpsp/static/js/main.ad81e1f8.chunk.js.map",
+    "runtime-main.js": "/jpsp/static/js/runtime-main.648a958f.js",
+    "runtime-main.js.map": "/jpsp/static/js/runtime-main.648a958f.js.map",
+    "static/js/2.801692d3.chunk.js": "/jpsp/static/js/2.801692d3.chunk.js",
+    "static/js/2.801692d3.chunk.js.map": "/jpsp/static/js/2.801692d3.chunk.js.map",
+    "index.html": "/jpsp/index.html",
+    "static/js/2.801692d3.chunk.js.LICENSE.txt": "/jpsp/static/js/2.801692d3.chunk.js.LICENSE.txt",
+    "static/media/ArchitectureImage.b98877a7.jpg": "/jpsp/static/media/ArchitectureImage.b98877a7.jpg",
+    "static/media/Brickwork.0750345a.jpg": "/jpsp/static/media/Brickwork.0750345a.jpg",
+    "static/media/ElectricBoard.4df6459e.jpg": "/jpsp/static/media/ElectricBoard.4df6459e.jpg",
+    "static/media/GardenImage.500dfc0c.jpg": "/jpsp/static/media/GardenImage.500dfc0c.jpg",
+    "static/media/GasImage.1af0a098.jpg": "/jpsp/static/media/GasImage.1af0a098.jpg",
+    "static/media/MainImage.210f2874.jpg": "/jpsp/static/media/MainImage.210f2874.jpg",
+    "static/media/OfficeImage.82116535.jpg": "/jpsp/static/media/OfficeImage.82116535.jpg",
+    "static/media/PlumbingImage.40fb4ffc.jpg": "/jpsp/static/media/PlumbingImage.40fb4ffc.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.648a958f.js",
+    "static/js/2.801692d3.chunk.js",
+    "static/js/main.ad81e1f8.chunk.js"
+  ]
+}
