@@ -41,8 +41,8 @@ const Electrician = () => {
                   Electricistas Matriculados
                 </Typography>
                 <Typography variant="subtitle1" paragraph>
-                  Trabajamos con precisión y proligidad en cada
-                  detalle de tu hogar, negocio o empreza.
+                  Trabajamos con precisión y prolijidad en cada
+                  detalle de tu hogar, negocio o empresa.
                 </Typography>
                 <Typography variant="subtitle1" color="primary">
                   Seguir leyendo...

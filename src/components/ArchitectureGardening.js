@@ -41,7 +41,7 @@ const ArchitectureGardening = () => {
                   Planos - Dirección de obra
                 </Typography>
                 <Typography variant="subtitle1" paragraph>
-                  Lleva tu idea a la realidad con la ayuda de nustros
+                  Lleva tu idea a la realidad con la ayuda de nuestros
                   especialistas en construcción.
                 </Typography>
                 <Typography variant="subtitle1" color="primary">

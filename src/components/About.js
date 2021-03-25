@@ -24,8 +24,8 @@ const AboutUs = () => {
           </Typography>
         <Divider />
           <Typography variant="subtitle1" color="inherit" paragraph>
-            Somos una empresa que conecta profecionales
-            de las ditintas areas que comprenden al hogar y/o
+            Somos una empresa que conecta profesionales
+            de las distintas areas que comprenden al hogar y/o
             al local comercial para satisfacer las necesidades
             de nuestros clientes.
           </Typography>

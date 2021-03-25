@@ -44,7 +44,7 @@ const MainHeader = () => {
         <Grid item md={6}>
           <div className={classes.mainFeaturedPostContent}>
             <Typography component="h1" variant="h3" color="inherit" gutterBottom>
-              Conecta con la red de profecionales mas grande de Argentina
+              Conecta con la red de profesionales mas grande de Argentina
             </Typography>
             <Typography variant="h5" color="inherit" paragraph>
               Todo lo que necesitas en un solo lugar
