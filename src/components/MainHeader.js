@@ -1,17 +1,19 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-import Link from '@material-ui/core/Link';
 import MainImage from '../images/MainImage.jpg'
 
 const useStyles = makeStyles((theme) => ({
   mainFeaturedPost: {
+    boxSizing: 'border-box',
     position: 'relative',
     backgroundColor: theme.palette.grey[800],
     color: theme.palette.common.white,
     marginBottom: theme.spacing(4),
+    backgroundImage: `url(${MainImage})`,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
@@ -34,29 +36,31 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const MainHeader = () => {
+const MainHeader = (props) => {
   const classes = useStyles();
+  const { post } = props;
 
   return (
-    <Paper className={classes.mainFeaturedPost} style={{ backgroundImage: `url(${MainImage})` }}>
+    <Paper className={classes.mainFeaturedPost}>
       <div className={classes.overlay} />
       <Grid container>
         <Grid item md={6}>
           <div className={classes.mainFeaturedPostContent}>
             <Typography component="h1" variant="h3" color="inherit" gutterBottom>
-              Conecta con la red de profesionales mas grande de Argentina
+            {post.title}
             </Typography>
             <Typography variant="h5" color="inherit" paragraph>
-              Todo lo que necesitas en un solo lugar
+            {post.description}
             </Typography>
-            <Link variant="subtitle1" href="#" style={{ color:'white' }}>
-              Visita nuestra galeria
-            </Link>
           </div>
         </Grid>
       </Grid>
     </Paper>
   );
 }
+
+MainHeader.propTypes = {
+  post: PropTypes.object,
+};
 
 export default MainHeader;
