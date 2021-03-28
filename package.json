@@ -1,6 +1,6 @@
 {
-  "homepage": "https://seabasslab.github.io/JPSP",
-  "name": "jpsp",
+  "homepage": "https://www.proyect-ar.com.ar",
+  "name": "proyect-ar",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,7 +17,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && echo www.proyect-ar.com.ar > ./build/CNAME",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
