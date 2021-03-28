@@ -11,7 +11,7 @@ const App = () => {
         <BrowserRouter>
           <Layout>
             <Switch>
-              <Route exact path="/JPSP/" component={Home} />
+              <Route exact path="/" component={Home} />
             </Switch>
           </Layout>
         </BrowserRouter>
