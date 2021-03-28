@@ -124,7 +124,7 @@ const Home = () => {
             ))}
           </Grid>
           <Grid container spacing={5} className={classes.mainGrid}>
-            <Main title="Proyect-Ar Conecciones" />
+            <Main title="Proyect-Ar Conexiones" />
             <Sidebar
               title={sidebar.title}
               description={sidebar.description}
