@@ -3,11 +3,12 @@ import { makeStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
-import GitHubIcon from '@material-ui/icons/GitHub';
+import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import MainHeader from '../components/MainHeader';
 import FeaturedPost from '../components/FeaturedPost';
+import Main from '../components/Main';
 import Sidebar from '../components/Sidebar';
 import BottomBanner from '../components/BottomBanner'
 import MainImage from '../images/MainImage.jpg';
@@ -92,7 +93,7 @@ const featuredPosts = [
 const sidebar = {
   title: 'Sobre nosotros',
   description:
-    'Somos una empresa que conecta profesionales de las distintas areas que comprenden al hogar y/o al local comercial para satisfacer las necesidades de nuestros clientes.',
+    'Somos una empresa que conecta a profesionales, de las distintas areas que comprenden al hogar y/o local comercial, con clientes. Con el fin de resolver las distintas necesidades de cada una de las partes de manera eficiente y segura.',
   archives: [
     { title: 'Arquitectura', url: '/arquitectura' },
     { title: 'Jardinería', url: '/jardineria' },
@@ -102,7 +103,7 @@ const sidebar = {
     { title: 'Plomería', url: '/plomeria' },
   ],
   social: [
-    { name: 'GitHub', icon: GitHubIcon, url: '#' },
+    { name: 'Instagram', icon: InstagramIcon, url: '#' },
     { name: 'Twitter', icon: TwitterIcon, url: '#' },
     { name: 'Facebook', icon: FacebookIcon, url: '#' },
   ],
@@ -123,6 +124,7 @@ const Home = () => {
             ))}
           </Grid>
           <Grid container spacing={5} className={classes.mainGrid}>
+            <Main title="Proyect-Ar Conecciones" />
             <Sidebar
               title={sidebar.title}
               description={sidebar.description}

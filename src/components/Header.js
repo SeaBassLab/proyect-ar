@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import Toolbar from '@material-ui/core/Toolbar';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
 
@@ -34,14 +33,12 @@ const Header = (props) => {
           component="h2"
           variant="h5"
           color="inherit"
+          align="center"
           noWrap
           className={classes.toolbarTitle}
         >
           {title}
         </Typography>
-        <Button variant="outlined" size="small">
-          iniciar secion
-        </Button>
       </Toolbar>
     </React.Fragment>
   );
