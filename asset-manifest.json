@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.js": "/static/js/main.18786bd5.chunk.js",
-    "main.js.map": "/static/js/main.18786bd5.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.0db8f719.js",
-    "runtime-main.js.map": "/static/js/runtime-main.0db8f719.js.map",
-    "static/js/2.5ba313cf.chunk.js": "/static/js/2.5ba313cf.chunk.js",
-    "static/js/2.5ba313cf.chunk.js.map": "/static/js/2.5ba313cf.chunk.js.map",
-    "index.html": "/index.html",
-    "static/js/2.5ba313cf.chunk.js.LICENSE.txt": "/static/js/2.5ba313cf.chunk.js.LICENSE.txt",
-    "static/media/ArchitectureImage.b98877a7.jpg": "/static/media/ArchitectureImage.b98877a7.jpg",
-    "static/media/Brickwork.0750345a.jpg": "/static/media/Brickwork.0750345a.jpg",
-    "static/media/ElectricBoard.4df6459e.jpg": "/static/media/ElectricBoard.4df6459e.jpg",
-    "static/media/GardenImage.500dfc0c.jpg": "/static/media/GardenImage.500dfc0c.jpg",
-    "static/media/GasImage.1af0a098.jpg": "/static/media/GasImage.1af0a098.jpg",
-    "static/media/MainImage.210f2874.jpg": "/static/media/MainImage.210f2874.jpg",
-    "static/media/OfficeImage.82116535.jpg": "/static/media/OfficeImage.82116535.jpg",
-    "static/media/PlumbingImage.40fb4ffc.jpg": "/static/media/PlumbingImage.40fb4ffc.jpg"
+    "main.js": "/proyect-ar/static/js/main.18786bd5.chunk.js",
+    "main.js.map": "/proyect-ar/static/js/main.18786bd5.chunk.js.map",
+    "runtime-main.js": "/proyect-ar/static/js/runtime-main.ef6060d5.js",
+    "runtime-main.js.map": "/proyect-ar/static/js/runtime-main.ef6060d5.js.map",
+    "static/js/2.5ba313cf.chunk.js": "/proyect-ar/static/js/2.5ba313cf.chunk.js",
+    "static/js/2.5ba313cf.chunk.js.map": "/proyect-ar/static/js/2.5ba313cf.chunk.js.map",
+    "index.html": "/proyect-ar/index.html",
+    "static/js/2.5ba313cf.chunk.js.LICENSE.txt": "/proyect-ar/static/js/2.5ba313cf.chunk.js.LICENSE.txt",
+    "static/media/ArchitectureImage.b98877a7.jpg": "/proyect-ar/static/media/ArchitectureImage.b98877a7.jpg",
+    "static/media/Brickwork.0750345a.jpg": "/proyect-ar/static/media/Brickwork.0750345a.jpg",
+    "static/media/ElectricBoard.4df6459e.jpg": "/proyect-ar/static/media/ElectricBoard.4df6459e.jpg",
+    "static/media/GardenImage.500dfc0c.jpg": "/proyect-ar/static/media/GardenImage.500dfc0c.jpg",
+    "static/media/GasImage.1af0a098.jpg": "/proyect-ar/static/media/GasImage.1af0a098.jpg",
+    "static/media/MainImage.210f2874.jpg": "/proyect-ar/static/media/MainImage.210f2874.jpg",
+    "static/media/OfficeImage.82116535.jpg": "/proyect-ar/static/media/OfficeImage.82116535.jpg",
+    "static/media/PlumbingImage.40fb4ffc.jpg": "/proyect-ar/static/media/PlumbingImage.40fb4ffc.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0db8f719.js",
+    "static/js/runtime-main.ef6060d5.js",
     "static/js/2.5ba313cf.chunk.js",
     "static/js/main.18786bd5.chunk.js"
   ]
