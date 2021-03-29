@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
+import Link from '@material-ui/core/Link';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 
@@ -19,6 +20,7 @@ const useStyles = makeStyles((theme) => ({
   toolbarLink: {
     padding: theme.spacing(1),
     flexShrink: 0,
+    textDecoration: 'none',
   },
 }));
 
@@ -37,7 +39,13 @@ const Header = (props) => {
           noWrap
           className={classes.toolbarTitle}
         >
-          {title}
+          <Link
+          href="/"
+          color="inherit"
+          underline="none"
+          >
+            {title}
+          </Link>
         </Typography>
       </Toolbar>
     </React.Fragment>
