@@ -57,7 +57,7 @@ const Electrician = () => {
               Electricidad
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
-            Los electricistas instalan y mantienen servicios eléctricos, tales como la iluminación,
+            Los Electricistas instalan y mantienen servicios eléctricos, tales como la iluminación,
             la electricidad y la calefacción. Trabajan en una amplia gama de edificios, incluyendo casas,
             oficinas, fábricas, hospitales y centrales eléctricas.
             </Typography>

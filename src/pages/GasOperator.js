@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
 
 const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-const Architect = () => {
+const GasOperator = () => {
   const classes = useStyles();
 
   const handleClick = () => {
@@ -54,13 +54,12 @@ const Architect = () => {
         <div className={classes.heroContent}>
           <Container maxWidth="sm">
             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-              Arquitectura
+              Gasista
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
-                Los Arquitectos diseñan edificios y permanecen involucrados en el proceso
-                de construcción hasta que el edificio está acabado por completo. El proyecto
-                puede incluir desde cambios en el edificio existente o la creación de un grupo
-                entero de edificios nuevos.
+                Los Gasistas instalan, mantienen y
+                garantizan la seguridad del suministro de gas a los hogares, fábricas,
+                comercios, oficinas y muchos otros tipos de construcción.
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
@@ -83,4 +82,4 @@ const Architect = () => {
   );
 };
 
-export default Architect;
+export default GasOperator;
