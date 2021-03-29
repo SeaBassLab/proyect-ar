@@ -4,7 +4,7 @@ import Footer from './Footer';
 
 const Layout = ({ children }) => (
   <>
-    <Header title="PROYECT-AR" />  
+    <Header />  
       {children}
     <Footer />
   </>
