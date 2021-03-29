@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import Link from '@material-ui/core/Link';
 import Toolbar from '@material-ui/core/Toolbar';
-import Logo from '../images/Proyect-Ar-White-recorte.png';
+import Logo from '../images/Proyect-Ar-sinFondo.png';
 
 
 const useStyles = makeStyles((theme) => ({
