@@ -3,19 +3,19 @@ import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import Link from '@material-ui/core/Link';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
+import Logo from '../images/Proyect-Ar-White-recorte.png';
 
 
 const useStyles = makeStyles((theme) => ({
   toolbar: {
-    borderBottom: `1px solid ${theme.palette.divider}`,
+    display: 'flex',
+    justifyContent: 'center',
   },
   toolbarTitle: {
     flex: 1,
   },
   toolbarSecondary: {
-    justifyContent: 'space-between',
-    overflowX: 'auto',
+    width: 150,
   },
   toolbarLink: {
     padding: theme.spacing(1),
@@ -24,29 +24,19 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Header = (props) => {
+const Header = () => {
   const classes = useStyles();
-  const { title } = props;
 
   return (
     <React.Fragment>
       <Toolbar className={classes.toolbar}>
-        <Typography
-          component="h2"
-          variant="h5"
-          color="inherit"
-          align="center"
-          noWrap
-          className={classes.toolbarTitle}
-        >
           <Link
           href="/"
           color="inherit"
           underline="none"
           >
-            {title}
+          <img src={Logo} alt="logo image" className={classes.toolbarSecondary} />
           </Link>
-        </Typography>
       </Toolbar>
     </React.Fragment>
   );

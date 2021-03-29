@@ -12,6 +12,7 @@ import Hidden from '@material-ui/core/Hidden';
 const useStyles = makeStyles({
   card: {
     display: 'flex',
+    height: 200,
   },
   cardDetails: {
     flex: 1,
