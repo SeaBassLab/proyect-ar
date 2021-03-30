@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
+import { Link } from 'react-router-dom';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Hidden from '@material-ui/core/Hidden';
@@ -20,6 +20,10 @@ const useStyles = makeStyles({
   cardMedia: {
     width: 160,
   },
+  links:{
+    textDecoration: 'none',
+    color: 'blue',
+  }
 });
 
 const FeaturedPost = (props) => {
@@ -28,7 +32,6 @@ const FeaturedPost = (props) => {
 
   return (
     <Grid item xs={12} md={6}>
-      <CardActionArea component="a" href={post.url}>
         <Card className={classes.card}>
           <div className={classes.cardDetails}>
             <CardContent>
@@ -42,7 +45,7 @@ const FeaturedPost = (props) => {
                 {post.description}
               </Typography>
               <Typography variant="subtitle1" color="primary">
-                Saber Mas...
+                <Link to={post.url} className={classes.links}>Saber Mas...</Link>
               </Typography>
             </CardContent>
           </div>
@@ -50,7 +53,6 @@ const FeaturedPost = (props) => {
             <CardMedia className={classes.cardMedia} image={post.image} title={post.imageTitle} />
           </Hidden>
         </Card>
-      </CardActionArea>
     </Grid>
   );
 }

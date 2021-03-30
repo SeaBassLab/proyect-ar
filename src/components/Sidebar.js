@@ -3,8 +3,12 @@ import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
 import Typography from '@material-ui/core/Typography';
-import Link from '@material-ui/core/Link';
+import { Link }from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   sidebarAboutBox: {
@@ -14,6 +18,10 @@ const useStyles = makeStyles((theme) => ({
   sidebarSection: {
     marginTop: theme.spacing(3),
   },
+  links:{
+    textDecoration: 'none',
+    color: 'blue',
+  }
 }));
 
 const Sidebar = (props) => {
@@ -31,24 +39,26 @@ const Sidebar = (props) => {
       <Typography variant="h6" gutterBottom className={classes.sidebarSection}>
         Links
       </Typography>
-      {archives.map((archive) => (
-        <Link display="block" variant="body1" href={archive.url} key={archive.title}>
-          {archive.title}
-        </Link>
-      ))}
+      <List>
+        {archives.map((archive) => (
+          <ListItem key={archive.title}>
+            <Link to={archive.url} className={classes.links}>{archive.title}</Link>
+          </ListItem>
+        ))}
+      </List>
       <Typography variant="h6" gutterBottom className={classes.sidebarSection}>
         Social
       </Typography>
-      {social.map((network) => (
-        <Link display="block" variant="body1" href={network.url} key={network.name}>
-          <Grid container direction="row" spacing={1} alignItems="center">
-            <Grid item>
-              <network.icon />
-            </Grid>
-            <Grid item>{network.name}</Grid>
-          </Grid>
-        </Link>
-      ))}
+      <List>
+        {social.map((network) => (
+            <ListItem key={network.name}>
+              <ListItemIcon>
+                <network.icon />
+              </ListItemIcon>
+              <ListItemText><Link to={network.url} className={classes.links}>{network.name}</Link></ListItemText>
+            </ListItem>
+        ))}
+      </List>
     </Grid>
   );
 }

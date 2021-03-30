@@ -35,7 +35,7 @@ const Header = () => {
           color="inherit"
           underline="none"
           >
-          <img src={Logo} alt="logo image" className={classes.toolbarSecondary} />
+          <img src={Logo} alt="logo" className={classes.toolbarSecondary} />
           </Link>
       </Toolbar>
     </React.Fragment>
