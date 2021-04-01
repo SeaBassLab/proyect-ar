@@ -2,14 +2,12 @@ import React from 'react';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
+import Popover from '@material-ui/core/Popover';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 
 const useStyles = makeStyles((theme) => ({
-  icon: {
-    marginRight: theme.spacing(2),
-  },
   heroContent: {
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(8, 0, 6),
@@ -17,33 +15,25 @@ const useStyles = makeStyles((theme) => ({
   heroButtons: {
     marginTop: theme.spacing(4),
   },
-  cardGrid: {
-    paddingTop: theme.spacing(8),
-    paddingBottom: theme.spacing(8),
-  },
-  card: {
-    height: '100%',
-    display: 'flex',
-    flexDirection: 'column',
-  },
-  cardMedia: {
-    paddingTop: '56.25%', // 16:9
-  },
-  cardContent: {
-    flexGrow: 1,
-  },
-  footer: {
-    backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(6),
+  typography: {
+    padding: theme.spacing(2),
   },
 }));
 
 const Architect = () => {
   const classes = useStyles();
+  const [anchorEl, setAnchorEl] = React.useState(null);
 
-  const handleClick = () => {
-    console.log('funciona')
-  }
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  const open = Boolean(anchorEl);
+  const id = open ? 'simple-popover' : undefined;
 
   return (
     <React.Fragment>
@@ -56,16 +46,32 @@ const Architect = () => {
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
                 Los Arquitectos diseñan edificios y permanecen involucrados en el proceso
-                de construcción hasta que el edificio está acabado por completo. El proyecto
+                de construcción hasta que el edificio esté acabado por completo. El proyecto
                 puede incluir desde cambios en el edificio existente o la creación de un grupo
                 entero de edificios nuevos.
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
                 <Grid item>
-                  <Button onClick={handleClick} variant="contained" color="primary">
+                  <Button onClick={handleClick} variant="contained" color="primary" aria-describedby={id}>
                     Contratar
                   </Button>
+                  <Popover
+                    id={id}
+                    open={open}
+                    anchorEl={anchorEl}
+                    onClose={handleClose}
+                    anchorOrigin={{
+                      vertical: 'bottom',
+                      horizontal: 'center',
+                    }}
+                    transformOrigin={{
+                      vertical: 'top',
+                      horizontal: 'center',
+                    }}
+                  >
+                    <Typography className={classes.typography}>Comunicate con nosotros al +54 351-772-7577</Typography>
+                  </Popover>
                 </Grid>
                 <Grid item>
                   <Button variant="outlined" color="primary" href="/">

@@ -18,6 +18,7 @@ import ElectricBoard from '../images/ElectricBoard.jpg';
 import BrickworkImage from '../images/Brickwork.jpg';
 import GasImage from '../images/GasImage.jpg';
 import PlumbingImage from '../images/PlumbingImage.jpg';
+import Footer from '../components/Footer';
 
 const useStyles = makeStyles((theme) => ({
   mainGrid: {
@@ -135,6 +136,7 @@ const Home = () => {
         </main>
         <BottomBanner />
       </Container>
+      <Footer />
     </React.Fragment>
   );
 };
