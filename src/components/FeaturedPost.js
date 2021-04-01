@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
+import SimplePopover from '../components/SimplePopover';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
@@ -12,7 +13,6 @@ import Hidden from '@material-ui/core/Hidden';
 const useStyles = makeStyles({
   card: {
     display: 'flex',
-    height: 200,
   },
   cardDetails: {
     flex: 1,
@@ -43,10 +43,11 @@ const FeaturedPost = (props) => {
               </Typography>
               <Typography variant="subtitle1" paragraph>
                 {post.description}
-              </Typography>
-              <Typography variant="subtitle1" color="primary">
+              </Typography>  
+              <Typography variant="subtitle1" color="primary" align="right">
                 <Link to={post.url} className={classes.links}>Saber Mas...</Link>
               </Typography>
+              <SimplePopover />
             </CardContent>
           </div>
           <Hidden xsDown>
